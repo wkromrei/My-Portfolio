@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+#name-styling {
+  text-shadow: 4px 6px 6px #1C6EA4;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  /* height: 80vh; */
+  /* width: 80vw; */
+  margin: 2px 2px 2px 2px;
+  padding: 4px 8px;
+  border: 2px groove purple;
+  background-color: pink;
+}
+
+.nav-ul {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-list {
+  padding: 2px;
+  border: 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*align-items: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+}
+
+.nav-item:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+}
+
+#Work {
+  min-height: 40vh;
+}
+
+ul {
+  list-style: none;
+}
+
+
+header {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 2px 2px 2px;
+  padding: 4px 8px;
+  height: 20vh;
+  border: 2px solid purple;
+  position: relative;
+  background-image: url('/Users/william/Desktop/images/19583790_l_normal_none.jpg');
+  background-size: cover;
+  background-position: center;
+  ;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2px 2px;
+  margin: 2px 2px;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    flex-direction: row;
+  }
+
+  section {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .header {
+      background-image: url('/Users/william/Desktop/images/19583790_l_normal_none.jpg');
