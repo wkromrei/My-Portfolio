@@ -8,25 +8,37 @@ body {
   font-family: Arial;
 }
 
-#name-styling {
-  text-shadow: 4px 6px 6px #1C6EA4;
-}
+header {
 
-section {
   display: flex;
   flex-direction: column;
-  /* height: 80vh; */
-  /* width: 80vw; */
+  justify-content: center;
+  align-items: center;
   margin: 2px 2px 2px 2px;
   padding: 4px 8px;
-  border: 2px groove purple;
-  background-color: pink;
+  height: 20vh;
+  border: 2px solid purple;
+  position: relative;
+  background-image: url('/My-Portfolio/assets/images/107632606_l_normal_none.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#name-styling {
+  text-shadow: 1px 1px 3px #1C6EA4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 5px;
+
+
 }
 
 .nav-ul {
   position: absolute;
   bottom: 0;
   right: 0;
+  text-shadow: 1px 1px 3px #bdd77c;
 }
 
 .nav-list {
@@ -54,6 +66,48 @@ section {
   margin-left: 10px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  /* height: 80vh; */
+  /* width: 80vw; */
+  margin: 2px 2px 2px 2px;
+  padding: 4px 8px;
+  border: 2px groove purple;
+  background-color: pink;
+}
+
+#About-Me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative
+}
+#About-Me-Header {
+  text-align: center;
+}
+
+#About-Me-Image {
+  max-width: 300px;
+  min-width: 100px;
+  align-self: flex-start;
+  margin-right: 20px;
+}
+
+#About-Me-Text {
+  
+  position: static;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 2px 2px 2px 2px;
+  padding: 4px 8px;
+  border: 2px groove purple;
+  background-color: pink;
+  max-width: 50%;
+}
+
 #Work {
   min-height: 40vh;
 }
@@ -63,22 +117,7 @@ ul {
 }
 
 
-header {
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2px 2px 2px 2px;
-  padding: 4px 8px;
-  height: 20vh;
-  border: 2px solid purple;
-  position: relative;
-  background-image: url('/Users/william/Desktop/images/19583790_l_normal_none.jpg');
-  background-size: cover;
-  background-position: center;
-  ;
-}
+
 
 footer {
   display: flex;
@@ -99,6 +138,9 @@ footer {
   }
 
 }
+
 @media screen and (max-width: 768px) {
   .header {
-      background-image: url('/Users/william/Desktop/images/19583790_l_normal_none.jpg');
+    background-image: url('/Users/william/Desktop/images/19583790_l_normal_none.jpg');
+  }
+}
