@@ -20,11 +20,11 @@ header {
   height: 20vh;
   border: 2px solid purple;
   position: relative;
-  background-image: url('/My-Portfolio/assets/images/107632606_l_normal_none.jpg');
+  background-image: url('../images/107632606_l_normal_none.jpg');
   background-size: cover;
   background-position: center;
 }
-
+/* name is formatted to the top left and given a blue twin peaksy shadow */ 
 #name-styling {
   text-shadow: 1px 1px 3px #1C6EA4;
   position: absolute;
@@ -48,10 +48,6 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /*align-items: right;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end; */
 }
 
 .nav-item {
@@ -65,7 +61,7 @@ header {
 {
   background-color: #1C6EA4;
 }
-
+/* added some space and a black divider between the navbar items at the top */
 .nav-item:not(:last-child)::after {
   content: "|";
   margin-left: 10px;
@@ -76,8 +72,6 @@ header {
 section {
   display: flex;
   flex-direction: column;
-  /* height: 80vh;  */
-  /* width: 80vw; */
   margin: 2px 2px 2px 2px;
   padding: 4px 8px;
   border: 2px groove purple;
@@ -101,7 +95,7 @@ section {
   align-self: flex-start;
   margin-right: 20px;
 }
-
+/* About me section text is formatted in a purple box, centered, and flows with screen size */
 #About-Me-Text {
 
   position: relative;
@@ -196,7 +190,8 @@ section {
   overflow: hidden;
   transition: background-image 0.3s ease;
 }
-
+/* The text of each project title is backlit with a light white shadow. The text turns red 
+and a blue box lights up behind the text when the cursor hovers over it*/
 .project-title:hover {
   background-color: #1C6EA4;
   color: red;
@@ -209,16 +204,9 @@ section {
 
 }
 
-
-
-
-
 ul {
   list-style: none;
 }
-
-
-
 
 footer {
   display: flex;
